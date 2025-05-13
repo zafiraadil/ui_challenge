@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Double Navbar Layout</title>
+  <style>
+    /* ========== Reset & Global Styles ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========== Upper Navbar ========== */
+    .upper-navbar {
+      height: 40px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    /* ========== Main Navbar ========== */
+    .main-navbar {
+      height: 70px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .main-navbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* ========== Hero Section ========== */
+    .hero {
+      height: 500px;
+      background: url('https://images.unsplash.com/photo-1525097487452-6278ff080c31') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero .hero-text {
+      flex: 1;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      max-width: 600px;
+      margin-left: 40px;
+      border-radius: 8px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* ========== Section Styling ========== */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-content {
+      background-color: #f9f9f9;
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 768px) {
+      .main-navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        align-items: flex-start;
+      }
+      .main-navbar nav {
+        display: flex;
+        flex-direction: column;
+      }
+      .main-navbar nav a {
+        margin: 10px 0;
+      }
+      .hero {
+        height: auto;
+        padding: 40px 0;
+      }
+      .hero .hero-text {
+        margin: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Upper Navbar -->
+  <div class="upper-navbar">
+    <div>Contact: info@example.com</div>
+    <div>Login | Register</div>
+  </div>
+
+  <!-- Main Navbar -->
+  <div class="main-navbar">
+    <div class="logo"><strong>MyWebsite</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to My Website</h1>
+      <p>We offer high-quality services that match your needs. Let’s build something amazing together!</p>
+    </div>
+  </section>
+
+  <!-- Example Section -->
+  <section>
+    <div class="container">
+      <div class="section-content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ac bibendum est.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Another Section -->
+  <section>
+    <div class="container">
+      <div class="section-content">
+        <h2>Our Services</h2>
+        <p>We provide web development, SEO optimization, branding, and more. Everything to make your business thrive online.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
