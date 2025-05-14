@@ -570,7 +570,10 @@
 .btn-whatsapp:hover {
   animation: pulse 0.8s infinite;
 }
-
+.btn-call:hover {
+  animation: pulse 0.8s infinite;
+  color: white;
+}
 
 
 /* === Responsive Fixes === */
